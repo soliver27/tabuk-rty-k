@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+ 
+ 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+ 
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+ 
+header h1 {
+    color: #2c3e50;
+   
+}
+ 
+ 
+article.kartya-tarolo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+ 
+ 
+.tabu-kartya {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.tabu-kartya:hover {
+    box-shadow: 0 6px 12px grey;
+}
+ 
+div.kartya-fejlec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    font-size: 0.85rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+ 
+ 
+ 
+.kartya-cime {
+    font-size: 30px;
+    color: #2980b9;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+ 
+.tiltott-szavak-fejlec {
+    color: black;
+    width: 100%;
+    padding: 5px 0;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 10px 0;
+    text-decoration: solid underline;
+}
+ 
+.tiltott-szavak {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+ 
+.tiltott-szavak li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #f0f0f0;
+    font-weight: 500;
+    color: #555;
+}
+ 
+.tiltott-szavak li:last-child {
+    border-bottom: none;
+}
+ 
+ 
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    color: #7f8c8d;
+    font-weight: bold;
+}
+ 
+ 
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 30px;
+    }
+   
+    article.kartya-tarolo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+ 
+    .tabu-kartya {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    header h1 {
+        font-size: 30px;
+    }
+   
+    article.kartya-tarolo {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+ 
+    .tabu-kartya {
+        padding: 15px;
+    }
+}
