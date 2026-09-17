@@ -28,17 +28,17 @@ header h1 {
 }
  
  
-article.kartya-tarolo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
-    justify-content: center;
 }
  
  
 .tabu-kartya {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-width: 150px;
+    flex: 1 1 calc(25% - 10px);
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
@@ -46,6 +46,7 @@ article.kartya-tarolo {
     border-radius: 12px;
     padding: 20px;
     text-align: center;
+
 }
  
 .tabu-kartya:hover {
@@ -53,8 +54,6 @@ article.kartya-tarolo {
 }
  
 div.kartya-fejlec {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     width: 100%;
     font-size: 0.85rem;
     color: black;
@@ -116,9 +115,7 @@ footer {
         font-size: 30px;
     }
    
-    article.kartya-tarolo {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    article {
         gap: 15px;
     }
  
@@ -132,9 +129,8 @@ footer {
         font-size: 30px;
     }
    
-    article.kartya-tarolo {
-        display: grid;
-        grid-template-columns: 1fr;
+    article {
+        flex-direction: column;
         gap: 15px;
     }
  
